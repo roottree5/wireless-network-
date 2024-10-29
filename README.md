@@ -15,7 +15,7 @@ https://ggugemall.com/product/detail.html?product_no=2736&cate_no=105&display_gr
 
 ---
 
-- 10/29~
+10/29~
 
 	- 아두이노 - 라즈베리파이 통신
 		-라즈베리파이; 카메라 기능 필요(실시간 녹화, 스크린샷/타임라인 저장, 안면인식 기능은 가능하면 추가), openCV, DB에 이벤트 발생 결과 업로드.
