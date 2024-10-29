@@ -2,6 +2,8 @@
 3조 wireless network project 
 
 필요 모듈
+- 도어락
+
 - 카메라
 
 - 지문 센서(JB-101B)
