@@ -1,7 +1,5 @@
-# wireless-network-
-wireless network project 
-
-3조 스마트 도어락
+# 스마트 도어락
+3조 wireless network project 
 
 필요 모듈
 - 카메라
