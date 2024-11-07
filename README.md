@@ -50,7 +50,11 @@ https://ggugemall.com/product/detail.html?product_no=2736&cate_no=105&display_gr
   	- 지문 등록 시 이름·권한 입력 후 자동 등록되는 방식은 다른 부분 구현 후 시도 예정.
 
 - DB
-  	- 이름·권한은 DB에서 직접 관리, 지문 데이터는 정수형으로 저장
+	- MySQL
+  		- ver: 8.0.37, OS: Windows, x86,32-bit, MSI Installer
+  		- pw: , server name: MySQL80
+   
+   	- 이름·권한은 DB에서 직접 관리, 지문 데이터는 정수형으로 저장
   	- table 구성(임시)
   	  - 누가, 언제, 어떻게 문을 사용했는가?
 		- event_id (pk) -> 이벤트를 구분하는 고유번호
