@@ -26,7 +26,7 @@ https://ggugemall.com/product/detail.html?product_no=2736&cate_no=105&display_gr
 -DB
 	- mySQL, 서버 열기·테이블 구성·데이터 관리
 
--지문 센서·RFID 센서·도어락
+- 지문 센서·RFID 센서·도어락
 	- 센서 도착 시 연결(다음 주~), 도어락 표본? 교수님이 제공해주실 예정. 참고해서 정보 수집 및 프로젝트에 추가
 
 - 결정해야 할 것들
