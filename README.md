@@ -52,22 +52,24 @@ https://ggugemall.com/product/detail.html?product_no=2736&cate_no=105&display_gr
 - DB
   	- 이름·권한은 DB에서 직접 관리, 지문 데이터는 정수형으로 저장
   	- table 구성(임시)
-  		-  Events (이벤트 기록용) -> 누가 , 언제 , 어떻게 문을 사용했는지?
+  		- 1. 누가, 언제, 어떻게 문을 사용했는가?
 		- event_id (pk) -> 이벤트를 구분하는 고유번호
-  		- timestamp: 발생시간 -> 이벤트가 발생한 날짜 or 시간
-  		- event_type: 문열림/닫힘, 인증성공/실패, 무단접근? ( 문이 열렸다 , 닫혔다 , 인증 성공했다 , 실패했다 )
-  		- auth_method: 지문/NFC/원격(지문,nfc , 원격은 pwa를통한 원격 열림 닫힘)
-  		- user_id ( 누가 시도했는지 , 등록된 사용자라면 알 수 있음 )
-  		- image_path: 보안이벤트 발생시 캡처( 보안 문제 발생시 찍힌 사진 저장 )
-  		- fail_count: 인증실패 횟수 ( 몇 번 실패했는지 )
-  		2. Users (사용자 관리) -> 인증된 사용자들
-  		- user_id (PK) -> 각 사용자의 고유번호
-  		- name -> 사용자의 이름 or 별칭 ?
-  		- role: 관리자/일반 -> 권한 구분(관리자/일반 사용자)
-  		- fingerprint_data -> (등록된 지문 정보)
-  		- nfc_tag_id ( 등록된 NFC 정보 )
-  		3. userNotifications (알림설정) -> 언제 , 누구에게 알림을 보낼지?
-  		- user_id (PK) -> 알림을 받을 사용자 구분
-  		- door_alert -> 문 열림/닫힘 여부 알림
-  		- auth_alert -> 인증 성공/실패 알림여부
-  		- security_alert -> 보안 이벤트 알림여부
+  		- timestamp: 발생 시각 -> 이벤트 발생 날짜, 시각
+  		- event_type: 문 열림/닫힘, 인증성공/실패, 무단접근?
+  		- auth_method: 지문/NFC/원격(지문, nfc, 원격은 pwa를통한 원격 열림 닫힘)
+  		- user_id (누가 시도했는지 등록된 사용자라면 알 수 있음)
+  		- image_path: 보안이벤트 발생시 캡처(보안 문제 발생시 찍힌 사진 저장)
+  		- fail_count: 인증 실패 횟수
+  		
+    		- 2. Users(사용자 관리) -> 인증된 사용자들
+  		- user_id (PK) : 각 사용자의 고유번호
+  		- name : 사용자의 이름/별칭 ...
+  		- role: 관리자/일반 -> 권한 구분
+  		- fingerprint_data : 등록된 지문 정보, 정수형이어야 함. (기존에 저장된 정보와 인식된 정보가 일치하는가로 판단하기 때문.)
+  		- nfc_tag_id : 등록된 NFC 정보
+  		
+    		- 3. userNotifications(알림설정) -> 어느 상황에, 누구에게 알림을 보낼까?
+  		- user_id (PK) : 알림을 받을 사용자 구분
+  		- door_alert : 문 열림/닫힘 알림 여부
+  		- auth_alert : 인증 성공/실패 알림 여부
+  		- security_alert : 보안 이벤트 알림 여부
