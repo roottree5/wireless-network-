@@ -33,3 +33,8 @@ https://ggugemall.com/product/detail.html?product_no=2736&cate_no=105&display_gr
 		-DB에 업로드할 것들?
 		-아두이노와 DB의 통신?
 		-이벤트 발생; 타임라인 저장(실시간 영상의 무조건적인 저장 필요) vs 이벤트 발생 시 스크린샷 촬영
+
+---
+
+11/5~
+
