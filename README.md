@@ -77,3 +77,9 @@ https://ggugemall.com/product/detail.html?product_no=2736&cate_no=105&display_gr
   		- door_alert : 문 열림/닫힘 알림 여부
   		- auth_alert : 인증 성공/실패 알림 여부
   		- security_alert : 보안 이벤트 알림 여부
+---
+11/12~
+
+- 모스키토 통신 성공
+- 아두이노와 라즈베리파이 wifi
+- 프론트엔드 json으로 진행하다가 html로 재진행...
