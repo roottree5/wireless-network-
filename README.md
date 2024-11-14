@@ -108,7 +108,8 @@ https://ggugemall.com/product/detail.html?product_no=2736&cate_no=105&display_gr
 	<img width="359" alt="KakaoTalk_20241114_220042425_01" src="https://github.com/user-attachments/assets/99e9319d-01c7-47c4-90b1-d6b08c8aa62b">
 	<img width="1507" alt="KakaoTalk_20241114_220042425" src="https://github.com/user-attachments/assets/d9eb7bda-a564-479f-a2c7-d65f7f83f877">
 	- 모바일 화면에서도 로컬로 접속해 UI 테스트까지 완료
-	![KakaoTalk_20241114_220049780_01](https://github.com/user-attachments/assets/f2768fdb-2df7-46df-8b8b-ff950a97ba2a)
+	
+ ![KakaoTalk_20241114_220049780_01](https://github.com/user-attachments/assets/f2768fdb-2df7-46df-8b8b-ff950a97ba2a)
 	![KakaoTalk_20241114_220049780](https://github.com/user-attachments/assets/58b248cf-4937-401b-b638-170b20899713)
 
 
