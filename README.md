@@ -111,6 +111,9 @@ https://ggugemall.com/product/detail.html?product_no=2736&cate_no=105&display_gr
    	![KakaoTalk_20241114_220049780](https://github.com/user-attachments/assets/60708103-2332-4754-871c-348843241d11)
 	![KakaoTalk_20241114_220049780_01](https://github.com/user-attachments/assets/82328c5f-2190-433d-b7b1-af4db1804902)
 
+	![KakaoTalk_20241114_220049780_01](https://github.com/user-attachments/assets/f2768fdb-2df7-46df-8b8b-ff950a97ba2a)
+![KakaoTalk_20241114_220049780](https://github.com/user-attachments/assets/58b248cf-4937-401b-b638-170b20899713)
+
 
 - DB
 - 테이블 구성 내용 세함)
