@@ -103,7 +103,7 @@ https://ggugemall.com/product/detail.html?product_no=2736&cate_no=105&display_gr
   	- PWA-DB통신 구현은 합동 진행
   	- 각 화면별로 더미 데이터 넣어서 프로토타입 구현 완료(기기와 DB의 연동이 완료되면 본격적인 데이터 입력해 UI수정 예정)
 	- <img width="1511" alt="KakaoTalk_20241114_220042425_04" src="https://github.com/user-attachments/assets/96cef1c0-4862-46e6-a4f5-863e53a0c0e4">
-	- <img width="281" alt="KakaoTalk_20241114_220042425_03" src="https://github.com/user-attachments/assets/0e8ccddb-9372-49c8-ab24-4d573749122f">
+	 <img width="281" alt="KakaoTalk_20241114_220042425_03" src="https://github.com/user-attachments/assets/0e8ccddb-9372-49c8-ab24-4d573749122f">
 	<img width="268" alt="KakaoTalk_20241114_220042425_02" src="https://github.com/user-attachments/assets/25ee612e-06b0-4755-9ba6-ae4a7e66d412">
 	 <img width="359" alt="KakaoTalk_20241114_220042425_01" src="https://github.com/user-attachments/assets/99e9319d-01c7-47c4-90b1-d6b08c8aa62b">
 	- <img width="1507" alt="KakaoTalk_20241114_220042425" src="https://github.com/user-attachments/assets/d9eb7bda-a564-479f-a2c7-d65f7f83f877">
