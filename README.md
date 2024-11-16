@@ -133,28 +133,6 @@ https://ggugemall.com/product/detail.html?product_no=2736&cate_no=105&display_gr
 
 
 
-# MySQL 접속 방법
-
-## 터미널을 통해 MySQL 접속하기
-
-MySQL 서버에 `test` 계정으로 접속하려면 다음 명령어를 사용합니다:
-
-```bash
-mysql -u test -h 183.97.149.51 -p
-```
-
-
-
-## 워크벤치 통해 Mysql 접속하기
-
-
-- Connection Method : standrd(Tcp/ip)
-- Hostname : 183.97.149.51
-- port : 3306
-- usename : test 
-
-### 비밀번호는 톡방에 올려놓을께요 
-
 
 
  
