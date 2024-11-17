@@ -23,7 +23,7 @@ https://ggugemall.com/product/detail.html?product_no=2736&cate_no=105&display_gr
 - pwa
 	- 인터페이스 구현
 	- 사용 이벤트 발생 시 사용자에게 알림
--DB
+- DB
 	- mySQL, 서버 열기·테이블 구성·데이터 관리
 
 - 지문 센서·RFID 센서·도어락
