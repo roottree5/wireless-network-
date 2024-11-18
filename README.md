@@ -124,14 +124,24 @@ https://ggugemall.com/product/detail.html?product_no=2736&cate_no=105&display_gr
 username varchar(20) not null,
 userpw varchar(30) not null,
 fid int not null,
-uid varchar(20) not null primary key, or uid int not null auto_increment primary key,
+uid varchar(20) not null,
+uid_int int not null auto_increment primary key,
 get_alert boolean not null);
-*uid: rfid이용-int형식으로 자동부여, 자동증가?
-	- create table eventinfo(
-fevent_time timestamp default current_timestamp,
-revent_time timestamp default current_timestamp,
+* uid(rfid정보 저장-사용자 아이디가 될 것) 일단 두 개의 칼럼을 만들어둠. 정수형/자동 증가, 혹은 문자형으로 일반 아이디처럼 사용하도록.. 아직 확정되지 않음.
+
+	- create table fingerp/rfid_confirm_time, fingerp/rfid_event(
+confirm/event timestamp default current_timestamp,
 door_status boolean not null);
-*지문과 rfid 센서에서 이벤트 발생 시 현재 시각을 찍어줌
+*각각 지문/rfid, 문열림/이벤트 칼럼명 동일하게 지정해둠.
+*지문과 rfid 센서에서 이벤트 발생 시 현재 시각을 찍어줌: db상에선 door_status의 값이 들어가면 현재 시각이 저장되거나, 아니면 시각과 문 상태 모두 직접 입력도 가능
+
+
+	- 공동 칼럼을 event라 할 때, 쿼리문 참고(join)
+SELECT eventinfo.door_status
+FROM userinfo
+JOIN eventinfo ON userinfo.event = eventinfo.event
+WHERE userinfo.uid = 5;
+
 
 
 ~ 11/18 ( pwa 통신 구현 계획(임시), 추가할 내용이 있는데 이것은 회의를 통해 기재할 예정.)
