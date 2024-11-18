@@ -119,6 +119,7 @@ https://ggugemall.com/product/detail.html?product_no=2736&cate_no=105&display_gr
 
 - DB
 	- 테이블 구성
+ 	- DB: sensor_data, tables: userinfo, fingerp_confirm_time, rfid_confirm_time, fingerp_event, rfid_event. 총 5개의 table.
 	- use sensor_data;
 	- create table userinfo(
 username varchar(20) not null,
@@ -127,20 +128,20 @@ fid int not null,
 uid varchar(20) not null,
 uid_int int not null auto_increment primary key,
 get_alert boolean not null);
-	* uid(rfid정보 저장-사용자 아이디가 될 것) 일단 두 개의 칼럼을 만들어둠. 정수형/자동 증가, 혹은 문자형으로 일반 아이디처럼 사용하도록.. 아직 확정되지 않음.
+	uid(rfid정보 저장-사용자 아이디가 될 것) 일단 두 개의 칼럼을 만들어둠. 정수형/자동 증가, 혹은 문자형으로 일반 아이디처럼 사용하도록.. 아직 확정되지 않음.
 
 
 	- create table fingerp/rfid_confirm_time, fingerp/rfid_event(
 confirm/event timestamp default current_timestamp,
 door_status boolean not null);
 	*각각 지문/rfid, 문열림/이벤트 칼럼명 동일하게 지정해둠.
-	*지문과 rfid 센서에서 이벤트 발생 시 현재 시각을 찍어줌: db상에선 door_status의 값이 들어가면 현재 시각이 저장되거나, 아니면 시각과 문 상태 모두 직접 입력도 가능
+	*지문과 rfid 센서에서 이벤트 발생 시 현재 시각을 찍어줌: db상에선 door_status의 값이 들어가면 현재 시각이 저장되거나, 아니면 시각과 문 상태 모두 직접 입력도 가능. YYYY-MM-DD HH:MM:SS의 형식으로 저장.
 
 
-	- 공동 칼럼을 event라 할 때, 쿼리문 참고(join)
-SELECT eventinfo.door_status
+	- 공동 칼럼을 door_status라 할 때, 쿼리문 참고(join)
+SELECT fingerp_confirm_time.confirm
 FROM userinfo
-JOIN eventinfo ON userinfo.event = eventinfo.event
+JOIN fingerp_confirm_time ON userinfo.door_status = fing_confirm_time.event
 WHERE userinfo.uid = 5;
 
 
