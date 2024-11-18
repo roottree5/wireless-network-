@@ -118,20 +118,20 @@ https://ggugemall.com/product/detail.html?product_no=2736&cate_no=105&display_gr
 
 
 - DB
-- 테이블 구성 내용(?)
-
-- 추가적인 작업(임시)
-- 차후 다양한 DB설계 및 연동 가능성 있음.
-	- 사용자 관리: 사용자 등록, 삭제, 권한 관리 등을 위한 데이터베이스 구조를 설계.
- 		- 사용자별 접근 권한 설정: 관리자/일반 사용자 권한 구분. 특정 사용자에게는 접근 시간 제한이나 특정일에만 접근 허용 등
-    		- 사용자의 도어락 출입 권한 설정 : 방문자와 가족 구성원의 출입 권한을 설정 등
-	- 출입 기록 저장: 사용자가 도어락을 사용한 날짜와 시간을 기록해 보안 로그를 생성하여 분석하거나, 비정상적인 출입 시도를 감지할 수 있도록 설정. 향후 보안 문제 발생 시 중요한 보안 분석 자료가 될 수 있음.
-	- 실시간 데이터 처리: 실시간으로 출입 기록을 분석해 외부 시스템이나 알림으로 전송하는 기능을 추가하여 보안 강화 ?
-	- 로그 및 이력 데이터 관리 : 도어락 사용 시 시간, 사용자 ID, 액세스 시도 성공 여부 등을 기록하여 누가 언제 도어락을 사용했는지 알 수 있는 기록 시스템 구축
-		- (x)알림 기능 통합 : 사용자 접근 시, 특정 이벤트 발생 시(예: 비정상적 접근 시도), 관리자는 알림을 받을 수 있도록 데이터베이스에서 이벤트 발생 시 알림 트리거하는 시스템 구축.
-	- 데이터 분석 : 데이터 기반으로 접근 패턴을 분석. 시간대별 사용 빈도, 비정상 시도 횟수 등을 시각화 가능. 보안 상태 평가 및 개선 가능 ?
-	- 백업 및 복구 시스템 설정 : 데이터베이스의 백업 및 복구 전략= 세우기. 정기적인 백업과 비상 시 데이터 복구 절차 마련
- - 
+	- 테이블 구성
+	- use sensor_data;
+	- create table userinfo(
+username varchar(20) not null,
+userpw varchar(30) not null,
+fid int not null,
+uid varchar(20) not null primary key, or uid int not null auto_increment primary key,
+get_alert boolean not null);
+*uid: rfid이용-int형식으로 자동부여, 자동증가?
+	- create table eventinfo(
+fevent_time timestamp default current_timestamp,
+revent_time timestamp default current_timestamp,
+door_status boolean not null);
+*지문과 rfid 센서에서 이벤트 발생 시 현재 시각을 찍어줌
 
 
 ~ 11/18 ( pwa 통신 구현 계획(임시), 추가할 내용이 있는데 이것은 회의를 통해 기재할 예정.)
