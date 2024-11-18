@@ -128,7 +128,9 @@ fid int not null,
 uid varchar(20) not null,
 uid_int int not null auto_increment primary key,
 get_alert boolean not null);
-	uid(rfid정보 저장-사용자 아이디가 될 것) 일단 두 개의 칼럼을 만들어둠. 정수형/자동 증가, 혹은 문자형으로 일반 아이디처럼 사용하도록.. 아직 확정되지 않음.
+	*uid(rfid정보 저장-사용자 아이디가 될 것) 일단 두 개의 칼럼을 만들어둠. 정수형/자동 증가, 혹은 문자형으로 일반 아이디처럼 사용하도록.. 아직 확정되지 않음.
+	- primary key 삭제: ALTER TABLE table name(userinfo) DROP PRIMARY KEY;
+ 	- 기존 칼럼에 primary key 특성 추가: ALTER TABLE table_name ADD PRIMARY KEY (column_name);
 
 
 	- create table fingerp/rfid_confirm_time, fingerp/rfid_event(
