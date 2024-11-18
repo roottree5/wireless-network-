@@ -139,6 +139,15 @@ door_status boolean not null);
 	*각각 지문/rfid, 문열림/이벤트 칼럼명 동일하게 지정해둠.
 	*지문과 rfid 센서에서 이벤트 발생 시 현재 시각을 찍어줌: db상에선 door_status의 값이 들어가면 현재 시각이 저장되거나, 아니면 시각과 문 상태 모두 직접 입력도 가능. YYYY-MM-DD HH:MM:SS의 형식으로 저장.
 
+	- userinfo table
+![스크린샷 2024-11-19 020851](https://github.com/user-attachments/assets/757502c6-1a71-4a1c-bb9b-3eb9fa03879d)
+	- 차례로 fingerp_confirm_time/rfid_confirm_time/fingerp_event/rfid_event tale
+![userinfo](https://github.com/user-attachments/assets/63f4f617-accd-46ad-a6f8-0563738f7d9e)
+	- userinfo table 데이터 삽입 모습
+![userinfo data](https://github.com/user-attachments/assets/b9c68c85-3c4b-4b47-b20d-1ae16c219178)
+	- fingerp_confirm_time table 데이터 삽입 모습
+![fingerp_confirm_time data](https://github.com/user-attachments/assets/7fc2eddd-e6f7-4fdc-95f0-7e517f5b30ad)
+
 
 	- 공동 칼럼을 door_status라 할 때, 쿼리문 참고(join)
 SELECT fingerp_confirm_time.confirm
