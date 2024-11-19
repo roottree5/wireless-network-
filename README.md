@@ -151,7 +151,7 @@ door_status boolean not null);
 	- table구성도
 ![tables](https://github.com/user-attachments/assets/9d9534a7-f668-461a-8eac-671f7dca7d43)
 
-	-그러나 1개의 id당 지문 등 정보를 한 개만 등록 가능한 구조로 수정 및 재구성이 필요
+	- 그러나 1개의 id당 지문 등 정보를 한 개만 등록 가능한 구조로 수정 및 재구성이 필요
 
 	- 공동 칼럼을 door_status라 할 때, 쿼리문 참고(join)
 SELECT fingerp_confirm_time.confirm
