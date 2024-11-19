@@ -148,7 +148,10 @@ door_status boolean not null);
 ![userinfo data](https://github.com/user-attachments/assets/b9c68c85-3c4b-4b47-b20d-1ae16c219178)
 	- fingerp_confirm_time table 데이터 삽입 모습
 ![fingerp_confirm_time data](https://github.com/user-attachments/assets/7fc2eddd-e6f7-4fdc-95f0-7e517f5b30ad)
+	- table구성도
+![tables](https://github.com/user-attachments/assets/9d9534a7-f668-461a-8eac-671f7dca7d43)
 
+	-그러나 1개의 id당 지문 등 정보를 한 개만 등록 가능한 구조로 수정 및 재구성이 필요
 
 	- 공동 칼럼을 door_status라 할 때, 쿼리문 참고(join)
 SELECT fingerp_confirm_time.confirm
