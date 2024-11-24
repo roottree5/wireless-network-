@@ -162,8 +162,8 @@ FROM userinfo
 JOIN fingerp_confirm_time ON userinfo.door_status = fing_confirm_time.event
 WHERE userinfo.uid = 5;
 -> 수정(11/23)
-   - fingerp/rfid_confirm_time, fingerp/rfid_event table을 병합하고, door_status부분을 공동으로 둔다; pwa와 라즈베리파이에서 현재의 문 열림 상태를 받아오기 위해서!
-   - null값은 모두 허용하고, door_status는 입력되면 현재 시각이 저장되는 특성은 유지한다.
+   - fingerp/rfid_confirm_time, fingerp/rfid_event table을 병합하고, door_status부분을 공동으로 둔다; pwa와 라즈베리파이에서 현재의 문 열림 상태를 받아오기 위해서임.
+   - null값은 모두 허용하고, 지문/rfid의 인증 성공/실패의 이벤트 발생(현재) 시각이 저장되는 특성은 유지한다.
 	- 수정된 테이블
  	- 테이블 구성, 특성
 	- ![describe](https://github.com/user-attachments/assets/3b7a58bf-bae3-4396-89d1-866f66df21bb)
