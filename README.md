@@ -144,7 +144,7 @@ door_status boolean not null);
 
 	- userinfo table
    	![userinfo](https://github.com/user-attachments/assets/63f4f617-accd-46ad-a6f8-0563738f7d9e)
-   	- 차례로 fingerp_confirm_time/rfid_confirm_time/fingerp_event/rfid_event tale
+   	- 차례로 fingerp_confirm_time/rfid_confirm_time/fingerp_event/rfid_event table
 ![스크린샷 2024-11-19 020851](https://github.com/user-attachments/assets/757502c6-1a71-4a1c-bb9b-3eb9fa03879d)
 
 	- userinfo table 데이터 삽입 모습
