@@ -165,8 +165,10 @@ WHERE userinfo.uid = 5;
    - fingerp/rfid_confirm_time, fingerp/rfid_event table을 병합하고, door_status부분을 공동으로 둔다; pwa와 라즈베리파이에서 현재의 문 열림 상태를 받아오기 위해서!
    - null값은 모두 허용하고, door_status는 입력되면 현재 시각이 저장되는 특성은 유지한다.
 	- 수정된 테이블
-	- ![스크린샷 2024-11-24 133636](https://github.com/user-attachments/assets/489f25be-d2c5-40ed-aaef-0474b4ac89ec)
-
+ 	- 테이블 구성, 특성
+	- ![describe](https://github.com/user-attachments/assets/3b7a58bf-bae3-4396-89d1-866f66df21bb)
+ 	- 데이터 삽입 예시(현재 시각이 삽입됨)
+ 	- ![insert](https://github.com/user-attachments/assets/2cdbfe5e-5baf-44ce-94c6-de98c871cd37)
 
 
 ~ 11/18 ( pwa 통신 구현 계획(임시), 추가할 내용이 있는데 이것은 회의를 통해 기재할 예정.)
