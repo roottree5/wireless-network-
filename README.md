@@ -154,7 +154,7 @@ door_status boolean not null);
 	- table구성도
 ![tables](https://github.com/user-attachments/assets/9d9534a7-f668-461a-8eac-671f7dca7d43)
 
-	- 그러나 1개의 id당 지문 등 정보를 한 개만 등록 가능한 구조로 수정 및 재구성이 필요
+	- 그러나 1개의 id당 지문 등 정보를 한 개만 등록 가능한 구조로 수정 및 재구성이 필요->가능함.
 
 	- 공동 칼럼을 door_status라 할 때, 쿼리문 참고(join)
 SELECT fingerp_confirm_time.confirm
@@ -164,6 +164,8 @@ WHERE userinfo.uid = 5;
 -> 수정(11/23)
    - fingerp/rfid_confirm_time, fingerp/rfid_event table을 병합하고, door_status부분을 공동으로 둔다; pwa와 라즈베리파이에서 현재의 문 열림 상태를 받아오기 위해서!
    - null값은 모두 허용하고, door_status는 입력되면 현재 시각이 저장되는 특성은 유지한다.
+	- 수정된 테이블
+	- ![스크린샷 2024-11-24 133636](https://github.com/user-attachments/assets/489f25be-d2c5-40ed-aaef-0474b4ac89ec)
 
 
 
