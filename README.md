@@ -58,7 +58,7 @@ Arduino에서 사용하는 **MySQL_Connection** 및 **MySQL_Cursor** 라이브�
    - **`execute()`** 함수에서 실행 결과를 반환하도록 코드 수정 작업을 진행했습니다.  
      수정 전:
      ```cpp
-     void execute(String query) {
+     bool execute(String query) {
          // 코드 일부
      }
      ```
