@@ -11,12 +11,12 @@ MQTT통신을 위한 broker의 설치와 설정
 라즈베리파이에서의 MQTT MQTT sub pub 코드
 PWA파트에서의 원격제어를 위한 MQTT Publish 코드
 
-## 과정
+## 진행 내용
 
 라즈베리 파이를 MQTT broker로 세팅하고 아두이노, PWA의 웹/앱 서비스와 MQTT를 통한 통신을 하도록 코드를 작성하도록 하였습니다
 
 
-### **아두이노의 MQTT broker 설치와 설정**
+## **아두이노의 MQTT broker 설치와 설정**
 
 아두이노를 MQTT의 브로커로 설정하고 MQTT broker를 정하였습니다
 
