@@ -192,6 +192,7 @@ mqttClient.publish('doorlock/notification', JSON.stringify({
 }));
 
 **알림 발생 흐름** 
+
 미등록 출입 시도 발생
 서버에서 이벤트 감지
 MQTT로 알림 메시지 전송
