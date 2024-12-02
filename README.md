@@ -20,9 +20,9 @@ MQTT 프로토콜을 활용한 실시간 도어락 제어 및 알림 시스템 �
 
 **프론트엔드 주요 기능**
 먼저 도어락 제어 화면입니다.
-**웹**
+
 <img width="689" alt="doorlock_screen" src="https://github.com/user-attachments/assets/183df149-71a5-426b-a4d4-68b1cca7f7dd">
-**모바일**
+
 ![mobile_doorlock_screen](https://github.com/user-attachments/assets/5b6cb92e-23b1-46ee-8bd5-c7967905c356)
 
 - 중앙의 큰 버튼으로 도어락을 열고 닫을 수 있습니다
@@ -39,9 +39,9 @@ MQTT 프로토콜을 활용한 실시간 도어락 제어 및 알림 시스템 �
 - 시간순으로 정렬되어 최신 기록을 바로 확인할 수 있습니다
 
 **사용자 관리 화면**
-**웹**
+
 <img width="1487" alt="user" src="https://github.com/user-attachments/assets/1c25161d-3127-4a2f-b655-3ddae2205d74">
-**모바일**
+
 ![mobilerecord](https://github.com/user-attachments/assets/85b589df-f390-4304-ae56-fa935d33713d)
 
 - 등록된 지문과 RFID 카드 목록을 확인할 수 있습니다
@@ -152,10 +152,8 @@ mqttClient.on('message', async (topic, message) => {
 
 5. 알림 시스템
    
-**웹**
 <img width="1499" alt="pcalarm" src="https://github.com/user-attachments/assets/40d1e68b-a0d9-454c-a661-cbce40c876c4">
 
-**모바일**
 ![mobilealarm](https://github.com/user-attachments/assets/49c8ece6-ea81-43ef-a307-caa975938a65)
 
 **알림 시스템 동작 과정**
