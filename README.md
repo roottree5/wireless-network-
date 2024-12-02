@@ -50,7 +50,8 @@ mosquitto -c mosquitto.conf -v -d
 ```
 
 ## **아두이노와 PWA에 broker에 연결하는 코드 작성**
-- 
+- [아두이노의 WIFI연결 & Broker subscribe](arduino_mqtt_base.ino)
+- [PWA Broker 연결 & publish](react_mqtt_connections.js)
 
 
 ## ***설정 중 발생한 문제***
