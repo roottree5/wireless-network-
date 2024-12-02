@@ -97,6 +97,7 @@ getFingerprintLogs: async (): Promise<ApiResponse<AccessLog[]>> => {
 }
 
 **전체 데이터 흐름**
+
 3-1 프론트엔드(React)에서 API 요청 발생
 3-2 백엔드 서버가 요청을 받아 MySQL 쿼리 실행
 3-3 데이터베이스에서 결과를 받아 JSON 형태로 변환
