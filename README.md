@@ -43,7 +43,8 @@ MQTT 프로토콜을 활용한 실시간 도어락 제어 및 알림 시스템 �
 
 <img width="1487" alt="user" src="https://github.com/user-attachments/assets/1c25161d-3127-4a2f-b655-3ddae2205d74">
 
-![mobilerecord](https://github.com/user-attachments/assets/85b589df-f390-4304-ae56-fa935d33713d)
+![mobileuser](https://github.com/user-attachments/assets/62104978-fb12-4057-b97f-c32c90796fa7)
+
 
 - 등록된 지문과 RFID 카드 목록을 확인할 수 있습니다
 
