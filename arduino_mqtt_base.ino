@@ -3,7 +3,7 @@
 
 const char* ssid = //"WIFI이름";
 const char* password = //"WIFI비밀번호";
-const char* mqtt_server = "192.168.0.42";
+const char* mqtt_server //라즈베리 IP
 
 WiFiClient espClient;
 PubSubClient client(espClient);
