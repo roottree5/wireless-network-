@@ -82,12 +82,12 @@ door_status boolean not null);
 	- OS 문제로 npm start 명령어의 오류
 	- cross-env 사용으로 해결
 	- 
-![KakaoTalk_20241202_171307855_03](https://github.com/user-attachments/assets/bc4f5210-11c2-44b6-8d58-2f9eb292aeb5)
-![KakaoTalk_20241202_171307855_02](https://github.com/user-attachments/assets/1006f7c8-07d7-4c62-be87-17f9a614bcd4)
-![KakaoTalk_20241202_171307855_01](https://github.com/user-attachments/assets/9436b565-1b40-4fb7-ad29-78b0be4586da)
-![KakaoTalk_20241202_171307855](https://github.com/user-attachments/assets/fb94ba1f-5594-45d9-be24-a4598eb87673)
-![cross-env 실행](https://github.com/user-attachments/assets/c4cd0104-60fc-4144-9636-e8abd2418aa6)
-![cross-env추가](https://github.com/user-attachments/assets/64cc24b4-da90-4027-aea6-ca39d90f0568)
-![ip](https://github.com/user-attachments/assets/860e2cbb-ebfe-4237-9b92-7f9c94718a30)
+![KakaoTalk_20241202_171307855_03](https://github.com/user-attachments/assets/0a19035f-d2c2-4620-873c-26d3479eb8f5)
+![KakaoTalk_20241202_171307855_02](https://github.com/user-attachments/assets/17ae1853-17e5-4d47-9819-246cc8e68637)
+![KakaoTalk_20241202_171307855_01](https://github.com/user-attachments/assets/c58ea4b2-e362-4d98-9f23-50757f69b5c5)
+![KakaoTalk_20241202_171307855](https://github.com/user-attachments/assets/ec9bfd44-30b8-475f-ab8c-8b9c95aeb85e)
+![cross-env 실행](https://github.com/user-attachments/assets/a2021169-dd6b-45ba-b03c-7bc00732c3dd)
+![cross-env추가](https://github.com/user-attachments/assets/bd9d2201-7bfd-4df3-83ea-8e4b099413a5)
+![ip](https://github.com/user-attachments/assets/989a1a22-cef4-4568-aad5-8fa046137160)
 
 cors수정으로 핸드폰에서 db불러오기 안 되는 것 수정 시도->테스트는 못함
