@@ -240,12 +240,5 @@ esp8266에서 php 서버 이용해서 데이터베이스에 접근해야 해서 
 	D+ => D1(SCL) 밑에꺼 
 	D- =>  D4
 	3.3v => 3.3v
-![KakaoTalk_20241202_171307855_03](https://github.com/user-attachments/assets/0a19035f-d2c2-4620-873c-26d3479eb8f5)
-![KakaoTalk_20241202_171307855_02](https://github.com/user-attachments/assets/17ae1853-17e5-4d47-9819-246cc8e68637)
-![KakaoTalk_20241202_171307855_01](https://github.com/user-attachments/assets/c58ea4b2-e362-4d98-9f23-50757f69b5c5)
-![KakaoTalk_20241202_171307855](https://github.com/user-attachments/assets/ec9bfd44-30b8-475f-ab8c-8b9c95aeb85e)
-![cross-env 실행](https://github.com/user-attachments/assets/a2021169-dd6b-45ba-b03c-7bc00732c3dd)
-![cross-env추가](https://github.com/user-attachments/assets/bd9d2201-7bfd-4df3-83ea-8e4b099413a5)
-![ip](https://github.com/user-attachments/assets/989a1a22-cef4-4568-aad5-8fa046137160)
 
 
