@@ -86,9 +86,9 @@ door_status boolean not null);
 
 
 	- 핸드폰에서 DB가 불러와지지 는 문제 해결
-	  	- - ![api_doorlock_ts](https://github.com/user-attachments/assets/b3377649-fb35-43b3-8ef2-037774b7dc19)
+		- ![api_doorlock_ts](https://github.com/user-attachments/assets/b3377649-fb35-43b3-8ef2-037774b7dc19)
 
-		- 추가적인 시도들들
+		- 추가적인 시도들
 		- index.ts에서 cors 수정
  		- ![cors](https://github.com/user-attachments/assets/3c3b60fc-0b8e-49ad-a8db-c9cc4559353a)
 
