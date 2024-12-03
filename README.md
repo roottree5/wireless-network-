@@ -26,7 +26,7 @@ PWA(Progressive Web App)를 통해 실시간으로 도어락 상태를 확인하
 ### **소프트웨어**  
 1. **PWA(Progressive Web App)**:  
     - HTML, CSS, JavaScript로 구현하여 다양한 플랫폼(iOS, Android, Windows)에서 작동.
-2. **데이터베이스**:  
+2. **MYSQL 데이터베이스**:  
     - 사용자 정보 및 인증 기록을 클라우드에 저장하여 관리.
 3. **MQTT 통신**:  
     - PWA에서 발생한 명령을 실시간으로 라즈베리파이가 아두이노로 전송하여 도어락 작동.
