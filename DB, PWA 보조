@@ -82,7 +82,5 @@ door_status boolean not null);
 	- OS 문제로 npm start 명령어의 오류
 	- cross-env 사용으로 해결
 	- 
-cross-env로 window에서도 npm start로 시작 가능 설정.
-cors수정으로 핸드폰에서 db불러오기 안 되는 것 수정 시도->테스트는 못함
-테이블 변경 기록들
 
+cors수정으로 핸드폰에서 db불러오기 안 되는 것 수정 시도->테스트는 못함
