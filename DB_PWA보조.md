@@ -72,7 +72,7 @@ door_status boolean not null);
    - null값은 모두 허용하고, 지문/rfid의 인증 성공/실패의 이벤트 발생(현재) 시각이 저장되는 특성은 유지한다.
 	- 수정된 테이블
  	- 테이블 구성, 특성
-	- ![describe](https://github.com/user-attachments/assets/3b7a58bf-bae3-4396-89d1-866f66df21bb)
+	- ![table](https://github.com/user-attachments/assets/9357e637-043e-4ce4-aa34-294138fda3da)
  	- 데이터 삽입 예시(현재 시각이 삽입됨)
  	- ![insert](https://github.com/user-attachments/assets/2cdbfe5e-5baf-44ce-94c6-de98c871cd37)
 
@@ -81,13 +81,15 @@ door_status boolean not null);
 - PWA
 	- OS 문제로 npm start 명령어의 오류
 	- cross-env 사용으로 해결
-	- 
-![KakaoTalk_20241202_171307855_03](https://github.com/user-attachments/assets/0a19035f-d2c2-4620-873c-26d3479eb8f5)
-![KakaoTalk_20241202_171307855_02](https://github.com/user-attachments/assets/17ae1853-17e5-4d47-9819-246cc8e68637)
-![KakaoTalk_20241202_171307855_01](https://github.com/user-attachments/assets/c58ea4b2-e362-4d98-9f23-50757f69b5c5)
-![KakaoTalk_20241202_171307855](https://github.com/user-attachments/assets/ec9bfd44-30b8-475f-ab8c-8b9c95aeb85e)
-![cross-env 실행](https://github.com/user-attachments/assets/a2021169-dd6b-45ba-b03c-7bc00732c3dd)
-![cross-env추가](https://github.com/user-attachments/assets/bd9d2201-7bfd-4df3-83ea-8e4b099413a5)
-![ip](https://github.com/user-attachments/assets/989a1a22-cef4-4568-aad5-8fa046137160)
+	- ![cross-env추가](https://github.com/user-attachments/assets/f0f92ef0-4784-4065-ad46-b46c87fbaab5)
+ 	- ![cross-env 실행](https://github.com/user-attachments/assets/36d57d74-9225-423e-a1a8-3705a7f27f89)
 
-cors수정으로 핸드폰에서 db불러오기 안 되는 것 수정 시도->테스트는 못함
+	- 핸드폰에서 DB가 불러와지지 않음
+	- index.ts에서 cors 수정
+ 	- ![cors](https://github.com/user-attachments/assets/3c3b60fc-0b8e-49ad-a8db-c9cc4559353a)
+	- ip 동일 환경 확인, 각 api를 컴퓨터의 local ip로 변경해주었으나 핸드폰에서 열리지 않아서 테스트는 하지 못하였음.
+ 	- 단, 옮겨진 환경이 아닌 기존(처음 개발된 환경)에서는 핸드폰으로 연결이 가능하였음.
+    	 - ![ip](https://github.com/user-attachments/assets/ac48760e-d94e-424c-9175-f5f325b9789c)
+    	 - ![env](https://github.com/user-attachments/assets/3b686326-bcdf-474f-be34-4647078ff0bf)
+	 - ![api_doorlock_ts](https://github.com/user-attachments/assets/b3377649-fb35-43b3-8ef2-037774b7dc19)
+	- ![api_index_ts](https://github.com/user-attachments/assets/91d3f35d-5ee0-4278-84c0-279271283599)
