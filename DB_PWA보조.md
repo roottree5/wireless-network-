@@ -80,16 +80,17 @@ door_status boolean not null);
 -----
 - PWA
 	- OS 문제로 npm start 명령어의 오류
-	- cross-env 사용으로 해결
-	- ![cross-env추가](https://github.com/user-attachments/assets/f0f92ef0-4784-4065-ad46-b46c87fbaab5)
- 	- ![cross-env 실행](https://github.com/user-attachments/assets/36d57d74-9225-423e-a1a8-3705a7f27f89)
+		- cross-env 사용으로 해결
+		- ![cross-env추가](https://github.com/user-attachments/assets/f0f92ef0-4784-4065-ad46-b46c87fbaab5)
+ 		- ![cross-env 실행](https://github.com/user-attachments/assets/36d57d74-9225-423e-a1a8-3705a7f27f89)
 
 	- 핸드폰에서 DB가 불러와지지 않음
-	- index.ts에서 cors 수정
- 	- ![cors](https://github.com/user-attachments/assets/3c3b60fc-0b8e-49ad-a8db-c9cc4559353a)
+		- index.ts에서 cors 수정
+ 		- ![cors](https://github.com/user-attachments/assets/3c3b60fc-0b8e-49ad-a8db-c9cc4559353a)
+
 	- ip 동일 환경 확인, 각 api를 컴퓨터의 local ip로 변경해주었으나 핸드폰에서 열리지 않아서 테스트는 하지 못하였음.
  	- 단, 옮겨진 환경이 아닌 기존(처음 개발된 환경)에서는 핸드폰으로 연결이 가능하였음.
-    	 - ![ip](https://github.com/user-attachments/assets/ac48760e-d94e-424c-9175-f5f325b9789c)
-    	 - ![env](https://github.com/user-attachments/assets/3b686326-bcdf-474f-be34-4647078ff0bf)
-	 - ![api_doorlock_ts](https://github.com/user-attachments/assets/b3377649-fb35-43b3-8ef2-037774b7dc19)
-	- ![api_index_ts](https://github.com/user-attachments/assets/91d3f35d-5ee0-4278-84c0-279271283599)
+	    	 - ![ip](https://github.com/user-attachments/assets/ac48760e-d94e-424c-9175-f5f325b9789c)
+    		 - ![env](https://github.com/user-attachments/assets/3b686326-bcdf-474f-be34-4647078ff0bf)
+	 	- ![api_doorlock_ts](https://github.com/user-attachments/assets/b3377649-fb35-43b3-8ef2-037774b7dc19)
+		- ![api_index_ts](https://github.com/user-attachments/assets/91d3f35d-5ee0-4278-84c0-279271283599)
