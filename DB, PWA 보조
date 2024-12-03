@@ -1,13 +1,8 @@
-cross-env로 window에서도 npm start로 시작 가능 설정.
-cors수정으로 핸드폰에서 db불러오기 안 되는 것 수정 시도->테스트는 못함
-테이블 변경 기록들
-
-
-- 초기 역할: DB
+-DB
   - mySQL, 서버 열기·테이블 구성·데이터 관리
+	- localhost로 DB를 만들었으나, DB가 저장된 노트북에 항상 연결해놓고 개발이 불가하기에 외부 ip로 DB 접속이 가능하게 옮겼다.
 
 - DB 초기 구성 예정 리스트
-- DB
 	- MySQL
 	- 이름·권한은 DB에서 직접 관리, 지문 데이터는 정수형으로 저장
   	- 누가, 언제, 어떻게 문을 사용했는가?
@@ -31,9 +26,10 @@ cors수정으로 핸드폰에서 db불러오기 안 되는 것 수정 시도->�
   		- door_alert : 문 열림/닫힘 알림 여부
   		- auth_alert : 인증 성공/실패 알림 여부
   		- security_alert : 보안 이벤트 알림 여부
-----
-- DB
-	- 테이블 구성
+
+
+- 테이블 구성 수정
+
  	- DB: sensor_data, tables: userinfo, fingerp_confirm_time, rfid_confirm_time, fingerp_event, rfid_event. 총 5개의 table.
 	- use sensor_data;
 	- create table userinfo(
@@ -71,12 +67,7 @@ door_status boolean not null);
 
 	- 그러나 1개의 id당 지문 등 정보를 한 개만 등록 가능한 구조로 수정 및 재구성이 필요->가능함.
 
-	- 공동 칼럼을 door_status라 할 때, 쿼리문 참고(join)
-SELECT fingerp_confirm_time.confirm
-FROM userinfo
-JOIN fingerp_confirm_time ON userinfo.door_status = fing_confirm_time.event
-WHERE userinfo.uid = 5;
--> 수정(11/23)
+-수정(11/23)
    - fingerp/rfid_confirm_time, fingerp/rfid_event table을 병합하고, door_status부분을 공동으로 둔다; pwa와 라즈베리파이에서 현재의 문 열림 상태를 받아오기 위해서임.
    - null값은 모두 허용하고, 지문/rfid의 인증 성공/실패의 이벤트 발생(현재) 시각이 저장되는 특성은 유지한다.
 	- 수정된 테이블
@@ -84,3 +75,12 @@ WHERE userinfo.uid = 5;
 	- ![describe](https://github.com/user-attachments/assets/3b7a58bf-bae3-4396-89d1-866f66df21bb)
  	- 데이터 삽입 예시(현재 시각이 삽입됨)
  	- ![insert](https://github.com/user-attachments/assets/2cdbfe5e-5baf-44ce-94c6-de98c871cd37)
+
+
+-----
+- PWA
+	- 
+cross-env로 window에서도 npm start로 시작 가능 설정.
+cors수정으로 핸드폰에서 db불러오기 안 되는 것 수정 시도->테스트는 못함
+테이블 변경 기록들
+
