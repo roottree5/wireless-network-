@@ -90,9 +90,9 @@ door_status boolean not null);
 
 	- ip 동일 환경 확인, 각 api를 컴퓨터의 local ip로 변경해주었으나 핸드폰에서 열리지 않아서 테스트는 하지 못하였음.
  	- 단, 옮겨진 환경이 아닌 기존(처음 개발된 환경)에서는 핸드폰으로 연결이 가능하였음.
-		 - ![api 변경](https://github.com/user-attachments/assets/fb9cb0b0-4af1-4758-9b1a-150b6cb8251a)
-	    	 - ![ip](https://github.com/user-attachments/assets/ac48760e-d94e-424c-9175-f5f325b9789c)
-    		 - ![env](https://github.com/user-attachments/assets/3b686326-bcdf-474f-be34-4647078ff0bf)
+	   	- ![ip](https://github.com/user-attachments/assets/ac48760e-d94e-424c-9175-f5f325b9789c)
+    		- ![api 변경](https://github.com/user-attachments/assets/fb9cb0b0-4af1-4758-9b1a-150b6cb8251a)
+    		- ![env](https://github.com/user-attachments/assets/3b686326-bcdf-474f-be34-4647078ff0bf)
 	 	- ![api_doorlock_ts](https://github.com/user-attachments/assets/b3377649-fb35-43b3-8ef2-037774b7dc19)
 		- ![api_index_ts](https://github.com/user-attachments/assets/91d3f35d-5ee0-4278-84c0-279271283599)
 		- ![연결실패](https://github.com/user-attachments/assets/916b2e53-8829-41ee-8754-8704b8dcb800)
