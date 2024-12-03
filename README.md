@@ -269,3 +269,37 @@ esp8266에서 php 서버 이용해서 데이터베이스에 접근해야 해서 
 - DB
   	- door_status 컬럼이 4개의 테이블에 모두 존재, door_status가 rfid_event테이블에서 업데이트 된다고 가정하면 다른 테이블들의 door_status값은 변하지 않아서 pwa에서 데이터를 가져갈 때와 아두이노에서 DB에 데이터를 올릴 때 데이터가 별개로 존재해 모순이 생김.
   	- -> 테이블을 병합하여 수정, door_status를 하나로 두는 것으로 변경.
+
+
+---
+- 11/25
+
+- 핀맵 최종 버전
+	- 보드 이름 : wemos D1 R2
+ 	- ![핀맵 최종](https://github.com/user-attachments/assets/6f6f3cac-6546-408d-aa5d-09d8355919db)
+	- RFID 핀맵 
+	RFID      아두이노
+	SDA => D2(SDA) (밑에꺼)
+	SCK => D5(SCK) (위에꺼)
+	MOSI => D7(MOSI) (위에꺼)
+	MISO => D6(MISO) (위에꺼)
+	GND => GND
+	RST => D3 
+	3.3V => 3.3V 
+
+
+	- 지문센서 핀맵 
+	지문      아두이노
+	GND => GND
+	D+ => D1(SCL) 밑에꺼 
+	D- =>  D4
+	3.3v => 3.3v
+
+	- 릴레이, 도어락
+	릴레이    아두이노
+	DC+ => 5V
+	DC - => GND
+	IN => D8
+	도어락 선 2개 => 릴레이모듈 NO, COM 에 연결
+
+- ![KakaoTalk_20241125_232343335](https://github.com/user-attachments/assets/170a4423-1cbd-4f33-a1b0-645512187435)
