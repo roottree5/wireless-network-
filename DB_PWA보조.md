@@ -1,4 +1,4 @@
--DB
+- DB
   - mySQL, 서버 열기·테이블 구성·데이터 관리
 	- localhost로 DB를 만들었으나, DB가 저장된 노트북에 항상 연결해놓고 개발이 불가하기에 외부 ip로 DB 접속이 가능하게 옮겼다.
 
@@ -94,3 +94,5 @@ door_status boolean not null);
     		 - ![env](https://github.com/user-attachments/assets/3b686326-bcdf-474f-be34-4647078ff0bf)
 	 	- ![api_doorlock_ts](https://github.com/user-attachments/assets/b3377649-fb35-43b3-8ef2-037774b7dc19)
 		- ![api_index_ts](https://github.com/user-attachments/assets/91d3f35d-5ee0-4278-84c0-279271283599)
+		- ![연결실패](https://github.com/user-attachments/assets/916b2e53-8829-41ee-8754-8704b8dcb800)
+
