@@ -171,7 +171,7 @@ WHERE userinfo.uid = 5;
  	- ![insert](https://github.com/user-attachments/assets/2cdbfe5e-5baf-44ce-94c6-de98c871cd37)
 
 
-~ 11/18 ( pwa 통신 구현 계획(임시), 추가할 내용이 있는데 이것은 회의를 통해 기재할 예정.)
+- 11/18 ( pwa 통신 구현 계획(임시), 추가할 내용이 있는데 이것은 회의를 통해 기재할 예정.)
 백엔드(node.js , express(프레임워크)에서 사용할 axios라는 http 클라이언트 라이브러리를 설치하여
 mysql에서 데이터베이스를 가져올 때 json 형식으로 자동변환해서 그 데이터를 사용하도록 할거고, 
 socket.io는 websocket(실시간 양방향 통신)을 구현할 때 쉽게 구현하게 해주는 라이브러리 입니다.
@@ -240,6 +240,7 @@ esp8266에서 php 서버 이용해서 데이터베이스에 접근해야 해서 
 	D+ => D1(SCL) 밑에꺼 
 	D- =>  D4
 	3.3v => 3.3v
+  
 - 데이터가 올라간 모습
 - 단, userinfo 테이블의 username, userpw는 필요하지 않고, uid_int는 uid타입이 확정 전에 임시로 만들어놓은 것이기 때문에 차후 삭제하였다.
 	- ![tablesetting](https://github.com/user-attachments/assets/e94d4bb5-be06-4806-b250-204fb67ce5d5)
