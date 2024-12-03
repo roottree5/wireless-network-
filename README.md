@@ -307,6 +307,7 @@ esp8266에서 php 서버 이용해서 데이터베이스에 접근해야 해서 
 ---
 - 11/26
 	- 최종 작동 확인
+        -  https://youtube.com/shorts/OS7T0hAiU1U?si=ekKKqgmCudQsKpaD
  	- 실행 시 DB결과
   	- 추가적으로 mqtt통신을 통해 문을 열었을 때에도 DB에 추가하기 위해서 pwa_confirm_time 칼럼 추가.
   	- <img width="577" alt="해당작업실행시결과" src="https://github.com/user-attachments/assets/acc0c85a-3426-4cb2-a20f-e95ce30160e6">
