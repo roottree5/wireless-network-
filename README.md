@@ -161,7 +161,8 @@ SELECT fingerp_confirm_time.confirm
 FROM userinfo
 JOIN fingerp_confirm_time ON userinfo.door_status = fing_confirm_time.event
 WHERE userinfo.uid = 5;
--> 수정(11/23)
+
+- 수정(11/23)
    - fingerp/rfid_confirm_time, fingerp/rfid_event table을 병합하고, door_status부분을 공동으로 둔다; pwa와 라즈베리파이에서 현재의 문 열림 상태를 받아오기 위해서임.
    - null값은 모두 허용하고, 지문/rfid의 인증 성공/실패의 이벤트 발생(현재) 시각이 저장되는 특성은 유지한다.
 	- 수정된 테이블
@@ -171,7 +172,7 @@ WHERE userinfo.uid = 5;
  	- ![insert](https://github.com/user-attachments/assets/2cdbfe5e-5baf-44ce-94c6-de98c871cd37)
 
 
-~ 11/18 ( pwa 통신 구현 계획(임시), 추가할 내용이 있는데 이것은 회의를 통해 기재할 예정.)
+- 11/18 ( pwa 통신 구현 계획(임시), 추가할 내용이 있는데 이것은 회의를 통해 기재할 예정.)
 백엔드(node.js , express(프레임워크)에서 사용할 axios라는 http 클라이언트 라이브러리를 설치하여
 mysql에서 데이터베이스를 가져올 때 json 형식으로 자동변환해서 그 데이터를 사용하도록 할거고, 
 socket.io는 websocket(실시간 양방향 통신)을 구현할 때 쉽게 구현하게 해주는 라이브러리 입니다.
