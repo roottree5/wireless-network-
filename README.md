@@ -84,7 +84,11 @@ door_status boolean not null);
 		- ![cross-env추가](https://github.com/user-attachments/assets/f0f92ef0-4784-4065-ad46-b46c87fbaab5)
  		- ![cross-env 실행](https://github.com/user-attachments/assets/36d57d74-9225-423e-a1a8-3705a7f27f89)
 
-	- 핸드폰에서 DB가 불러와지지 않음
+
+	- 핸드폰에서 DB가 불러와지지 는 문제 해결
+	  	- - ![api_doorlock_ts](https://github.com/user-attachments/assets/b3377649-fb35-43b3-8ef2-037774b7dc19)
+
+		- 추가적인 시도들들
 		- index.ts에서 cors 수정
  		- ![cors](https://github.com/user-attachments/assets/3c3b60fc-0b8e-49ad-a8db-c9cc4559353a)
 
@@ -93,7 +97,6 @@ door_status boolean not null);
 	   	- ![ip](https://github.com/user-attachments/assets/ac48760e-d94e-424c-9175-f5f325b9789c)
     		- ![api 변경](https://github.com/user-attachments/assets/fb9cb0b0-4af1-4758-9b1a-150b6cb8251a)
     		- ![env](https://github.com/user-attachments/assets/3b686326-bcdf-474f-be34-4647078ff0bf)
-	 	- ![api_doorlock_ts](https://github.com/user-attachments/assets/b3377649-fb35-43b3-8ef2-037774b7dc19)
 		- ![api_index_ts](https://github.com/user-attachments/assets/91d3f35d-5ee0-4278-84c0-279271283599)
 		- ![연결실패](https://github.com/user-attachments/assets/916b2e53-8829-41ee-8754-8704b8dcb800)
 
