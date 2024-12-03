@@ -214,7 +214,7 @@ axios로 서버에 데이터를 요청해서 json 형식 자동변환으로 받�
 	5. RFID 인증을 위해 DB에서 사용자 UID 데이터를 가져와 리스트를 만드는 사용자 인증 코드 업데이트
 
 ---
-- 11/20~
+- 11/20
 - 아두이노 uno : 5v 동작, esp01 : 3.3v동작; 기본적으로 uart 통신을 지원하지 않아서 코드 업로드자체가 잘 안됨.그래서 그걸 가능하게 해준다고 하는 esp01 어댑터 구매, 배송 오면 다시 시도 예정.
 - 지금 가지고 있는 esp8266을 사용한다고 해도 원래 쓰던 코드를 바로 사용할 수 있는게 아니라,
 일단 uno보드에 업로드 후, uno보드와 esp8266이 UT 통신을 진행하는 시스템이라서 
@@ -240,5 +240,32 @@ esp8266에서 php 서버 이용해서 데이터베이스에 접근해야 해서 
 	D+ => D1(SCL) 밑에꺼 
 	D- =>  D4
 	3.3v => 3.3v
+- 데이터가 올라간 모습
+- 단, userinfo 테이블의 username, userpw는 필요하지 않고, uid_int는 uid타입이 확정 전에 임시로 만들어놓은 것이기 때문에 차후 삭제하였다.
+	- ![tablesetting](https://github.com/user-attachments/assets/e94d4bb5-be06-4806-b250-204fb67ce5d5)
+	- ![tablesetting_지문](https://github.com/user-attachments/assets/caebc7d2-dad1-49e0-8f5b-676824c689c1)
+	- ![tablesetting_RFID](https://github.com/user-attachments/assets/03acbe07-1e5c-4f44-9049-3f69b6c597c5)
 
+---
+- 11/21
 
+- 도어락 작동
+	- 릴레이 모듈로 도어락 작동하는 것 확인. 기존에 사용하던 보드 RX TX 핀이 작동을 제대로 안 해서 지문인식이랑 연결이 제대로 안 됐던 것으로 추측.
+ 	- 두 개 다 릴레이 input에 연결하였으나 작동 안 함, 2번핀 input에 연결 후 작동
+	- https://github.com/user-attachments/assets/ba960c1f-4b72-47d2-968b-aad77dfbabaa
+
+ - pwa
+ 	- mysql DB랑 연동, DB에 저장된 정보 pwa로 가져오기 성공.
+ 	- 모바일이랑 web에서 알림 테스트까지 완료.
+  	- DB 따라 UI 조금씩 보완해나갈 예정.
+  
+ ----
+- 11/23
+
+ - 통신
+	 - pwa에서 문닫힘 열림 설정했을때 pwa => 라즈베리파이 => 아두이노 순서로 데이터가 전송, 라즈베리파이는 pwa에서 데이터가 들어오면 자동으로 mqtt통신으로 문여닫힘 정보를 전송?
+ 	- -> 파이썬에서 이벤트 리스너 넣을 수 있는 방식으로 진행하면 처리 가능. websocket연결 가능 확인 중, 안 되면 socketio코드를 mqtt로 작성해서 보내는 방식으로 진행.
+
+- DB
+  	- door_status 컬럼이 4개의 테이블에 모두 존재, door_status가 rfid_event테이블에서 업데이트 된다고 가정하면 다른 테이블들의 door_status값은 변하지 않아서 pwa에서 데이터를 가져갈 때와 아두이노에서 DB에 데이터를 올릴 때 데이터가 별개로 존재해 모순이 생김.
+  	- -> 테이블을 병합하여 수정, door_status를 하나로 두는 것으로 변경.
