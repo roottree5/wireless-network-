@@ -303,3 +303,15 @@ esp8266에서 php 서버 이용해서 데이터베이스에 접근해야 해서 
 	도어락 선 2개 => 릴레이모듈 NO, COM 에 연결
 
 - ![KakaoTalk_20241125_232343335](https://github.com/user-attachments/assets/170a4423-1cbd-4f33-a1b0-645512187435)
+
+---
+- 11/26
+	- 최종 작동 확인
+ 	- 실행 시 DB결과
+  	- 추가적으로 mqtt통신을 통해 문을 열었을 때에도 DB에 추가하기 위해서 pwa_confirm_time 칼럼 추가.
+  	- <img width="577" alt="해당작업실행시결과" src="https://github.com/user-attachments/assets/acc0c85a-3426-4cb2-a20f-e95ce30160e6">
+
+---
+- 11/30~
+
+- 최종 사업 계획서 작성. 
